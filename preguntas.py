@@ -133,8 +133,8 @@ def pregunta_03():
     # LogisticRegression con una regularización Cs=10
     pipeline = Pipeline(
         steps=[
-            ("onehotencoder", OneHotEncoder()),
-            ("logistic_regression", LogisticRegressionCV(Cs=10)),
+            ("OneHotEncoder", OneHotEncoder()),
+            ("LogisticRegression", LogisticRegressionCV(Cs=10)),
         ],
     )
 
